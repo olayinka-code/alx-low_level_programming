@@ -1,26 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main -entry point of a program
+ * main -entry point of the program
  *
- * return: always 0 (success)
+ * Return: Always 0 (success)
  *
  */
-
-int main(void) 
+int main(void)
 {
-	int i;
+	int n;
+
 	/**
-	 * for this function is used to loop the program till a condition is met
+	 * for: this function is used to loop the program
 	 *
-	 * printf: this function is used to print output to the stdo
+	 * printf: this is used to print output to std output
 	 *
 	 */
-
-    for (i = 0; i < 10; i++) 
-    {
-          printf("%d\n", i);
-    }
-
-    return 0;
+	for (n = 0; n < 10; n++)
+	{
+		putchar(n + '0');
+	}
+	putchar('\n');
+	return (0);
 }
